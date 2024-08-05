@@ -1,0 +1,11 @@
+[package]
+name = "atopile"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+indoc = "2.0.5"
+insta = "1.39.0"
+natord = "1.0.9"
+schematics = { path = "../schematics" }
+thiserror = "1.0.62"

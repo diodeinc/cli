@@ -1,0 +1,13 @@
+[package]
+name = "diode"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+schematics = { path = "crates/schematics" }
+kicad2schematics = { path = "crates/kicad2schematics" }
+atopile = { path = "crates/atopile" }
+clap = { version = "4.5.9", features = ["derive"] }
+inquire = "0.7.5"
+colored = "2.1.0"
+expanduser = "1.2.2"

@@ -1,0 +1,30 @@
+[package]
+name = "schematics"
+version = "0.1.0"
+edition = "2021"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[features]
+edatasheet = []
+
+[dependencies]
+thiserror = "1.0.61"
+uuid = { version = "1.10.0", features = ["v4", "fast-rng"] }
+
+# TODO: avoid duplicating these from `[build-dependencies]`, but with the
+# current BUILD file, build.rs can't see these crates unless they are also here
+prettyplease = "0.2"
+schemars = "0.8"
+serde_json = "1.0"
+syn = "2.0"
+typify = "0.1.0"
+serde = "1.0.204"
+derive_builder = "0.20.0"
+
+[build-dependencies]
+prettyplease = "0.2"
+schemars = "0.8"
+serde_json = "1.0"
+syn = "2.0"
+typify = "0.1.0"

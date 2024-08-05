@@ -1,0 +1,9 @@
+[package]
+name = "kicad2schematics"
+version = "0.1.0"
+edition = "2021"
+
+[dependencies]
+schematics = { path = "../schematics" }
+kicad_format = { git = "https://github.com/diodeinc/kicad_lib" }
+thiserror = "1.0.63"
